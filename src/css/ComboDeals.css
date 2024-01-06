@@ -1,0 +1,30 @@
+ h5 {
+    position: relative;
+    top: 20px;  
+    /* height: 20px; */
+    background-color:green;
+    border: 2px solid green;
+    color: white;
+    margin-bottom: -15px;
+    height: 30px;
+    width:60px ;
+    margin-left: 6px;
+    /* padding: 10px; */
+}
+
+/* .veg-item{
+    height: 250px;
+    width: 300px;
+} */
+
+@media screen and (min-width: 350px) {
+    .deals{
+        width: 100vw;
+    }
+}
+@media  screen and (max-width:900px) {
+    .deals{
+        width: 22vw;
+    }
+}
+
