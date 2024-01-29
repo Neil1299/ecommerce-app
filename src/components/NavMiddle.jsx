@@ -54,19 +54,19 @@ const NavMiddle = () => {
             </li>
             <hr />
             <li>
-              <Link to="">Exotic Fruits</Link>
+              <Link to="/exoticfruit">Exotic Fruits</Link>
             </li>
             <hr />
             <li>
-              <Link to="">Mushrooms</Link>
+              <Link to="/mushroom">Mushrooms</Link>
             </li>
             <hr />
             <li>
-              <Link to="">Organic Microgreen & Vegetables</Link>
+              <Link to="/organicmicro">Organic Microgreen & Vegetables</Link>
             </li>
             <hr />
             <li>
-              <Link to="">salad Items</Link>
+              <Link to="/saladitems">salad Items</Link>
             </li>
             <hr />
             <li>

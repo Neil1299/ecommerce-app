@@ -9,6 +9,10 @@ import AllCombo from './components/AllCombo.jsx';
 import Footer from './components/Footer.jsx';
 import AllFruits from './components/AllFruits.jsx';
 import AllVEgetable from './components/AllVEgetable.jsx';
+import ExoticFruits from './components/ExoticFruits.jsx';
+import Mushroom from './components/Mushroom.jsx';
+import OrganicMicrogreen from './components/OrganicMicrogreen.jsx';
+import SaladItems from './components/SaladItems.jsx';
 
 function App() {
   return (
@@ -22,6 +26,10 @@ function App() {
   <Route path='/allproduct' element={<AllCombo/>}/>
   <Route path='/allfruit' element={<AllFruits/>}/>
   <Route path='/allveg' element={<AllVEgetable/>}/>
+  <Route path='/exoticfruit' element={<ExoticFruits/>}/>
+  <Route path='/mushroom' element={<Mushroom/>}/>
+  <Route path='/organicmicro' element={<OrganicMicrogreen/>}/>
+  <Route path='/saladitems' element={<SaladItems/>}/>
  </Routes>
  <Footer/>
  

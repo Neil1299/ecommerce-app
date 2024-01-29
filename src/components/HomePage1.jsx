@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import img1 from '../img/veg1.avif';
 import img2 from '../img/veg5.avif';
 import img3 from '../img/veg2.avif';
@@ -11,24 +11,27 @@ import img9 from '../img/veg5.avif';
 import img10 from '../img/veg10.avif'; 
 
 const HomePage1 = () => {
-    const vegArray=[img1,img2,img3,img4,img5,img6,img7,img8,img9,img10];
-    const [currentImage,setCurrentImage]=useState(0)
+  const vegArray = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+  const [currentImage, setCurrentImage] = useState(0);
 
-   useEffect(()=>{
-        setTimeout(()=>{
-            if (currentImage === (vegArray.length-1)) {
-                setCurrentImage(0);
-              }else
-            setCurrentImage(currentImage + 1);
-        },2000);
-    
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (currentImage === vegArray.length - 1) {
+        setCurrentImage(0);
+      } else {
+        setCurrentImage(currentImage + 1);
+      }
+    }, 2000);
 
-    },[currentImage]);
+    return () => clearInterval(intervalId);
+
+  }, [currentImage, vegArray.length]);
+
   return (
-    <div  className='container-fluid bg-dark min-vh-50'>
-      <img style={{height:"100vh",width:"100%"}} src={vegArray[currentImage]} alt="" />
+    <div className='container-fluid bg-dark min-vh-50'>
+      <img className='img-fluid' src={vegArray[currentImage]} alt="" />
     </div>
-  )
-}
+  );
+};
 
-export default HomePage1
+export default HomePage1;
